@@ -3,15 +3,17 @@ package critical;
 /**
  * @author hyeonisism
  */
-public class NotThreadSafeCounter {
+public class NotThreadSafeCounter implements Counter {
 
-    private long count = 0;
+    private int count = 0;
 
+    @Override
     public void increase() {
         count++;
     }
 
-    public long getCount() {
+    @Override
+    public int getCount() {
         return count;
     }
 }
