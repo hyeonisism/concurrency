@@ -3,15 +3,17 @@ package critical;
 /**
  * @author hyeonisism
  */
-public class ThreadSafeCounter {
+public class ThreadSafeCounter implements Counter {
 
-    private volatile long count = 0;
+    private volatile int count = 0;
 
-    public synchronized void add(long value) {
-        count += value;
+    @Override
+    public synchronized void increase() {
+        count++;
     }
 
-    public long getCount() {
+    @Override
+    public int getCount() {
         return count;
     }
 }
