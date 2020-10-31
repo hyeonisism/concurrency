@@ -1,4 +1,4 @@
-package basic;
+package org.hyeonisism.basic;
 
 
 /**

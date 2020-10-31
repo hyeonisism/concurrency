@@ -1,4 +1,6 @@
-package critical;
+package org.hyeonisism.critical;
+
+import org.hyeonisism.common.Counter;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

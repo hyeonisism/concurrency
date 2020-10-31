@@ -1,12 +1,17 @@
-package critical;
+package org.hyeonisism;
+
+import org.hyeonisism.common.Counter;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-abstract class AbstractCounterTests {
+/**
+ * @author hyeonisism
+ */
+public abstract class AbstractCounterTests {
 
     private final int iteration = 20000;
 
-    void shouldNotThreadSafe(final Counter counter) throws InterruptedException {
+    protected void shouldNotThreadSafe(final Counter counter) throws InterruptedException {
         // when
         increase(counter);
 
@@ -14,7 +19,7 @@ abstract class AbstractCounterTests {
         assertThat(counter.getCount()).isNotEqualTo(iteration);
     }
 
-    void shouldThreadSafe(final Counter counter) throws InterruptedException {
+    protected void shouldThreadSafe(final Counter counter) throws InterruptedException {
         // when
         increase(counter);
 

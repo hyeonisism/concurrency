@@ -1,4 +1,6 @@
-package critical;
+package org.hyeonisism.critical;
+
+import org.hyeonisism.common.Counter;
 
 /**
  * @author hyeonisism
