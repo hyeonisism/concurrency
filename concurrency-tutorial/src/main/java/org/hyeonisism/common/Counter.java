@@ -1,4 +1,4 @@
-package critical;
+package org.hyeonisism.common;
 
 /**
  * @author hyeonisism

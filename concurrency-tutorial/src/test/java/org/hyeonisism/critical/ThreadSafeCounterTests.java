@@ -1,5 +1,6 @@
-package critical;
+package org.hyeonisism.critical;
 
+import org.hyeonisism.AbstractCounterTests;
 import org.junit.jupiter.api.Test;
 
 /**
